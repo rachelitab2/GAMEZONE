@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'Ledlight';
+    src: url('./fonts/ledlight.otf');
+}
+
+:root{
+    --dark:#030164;
+    --primary:#363199;
+    --secondary:#2D7495;
+    --accent:#E8E085;
+
+    --white:#ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--dark);
+    color: #ffffff;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 24px 50px;
+
+    background-color: var(--primary);
+}
+
+.logo{
+    font-family:'Ledlight';
+    font-size:2rem;
+    font-weight: bold;
+}
+
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 20px;
+
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color:var(--accent)
+}
+
+.hero{
+    text-align:center;
+    min-height:70vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero h1{
+    font-family: 'Ledlight';
+    font-size: 6rem;
+    color:var(--accent);
+    letter-spacing:8px;
+    margin-top:80px;
+    margin-bottom: 40px;
+
+}
+
+.hero p{
+    font-size:1.5rem;
+    margin-bottom:40px;
+    color:#ffffff;
+}
+
+.hero button{
+    background-color:var(--accent);
+    color:var(--dark);
+    border:none;
+    padding:15px 30px;
+    border-radius:10px;
+    font-size:1rem;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.hero button:hover{
+    background:white;
+    transform:translateY(-3px);
+    box-shadow:0 0 20px var(--accent);
+}
+
+.games{
+    padding: 150px 50px 80px;
+}
+
+.games h2{
+    font-family: 'Ledlight';
+    text-align:center;
+    margin-bottom: 40px;
+    color:var(--accent);
+    font-size:2rem;
+}
+
+.games-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+
+    background-color:var(--primary);
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    transition:0.3s;
+    border:2px solid transparent;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+    border:2px solid var(--accent);
+    box-shadow:0 0 25px rgba(232,224,133,.5);
+}
+
+.card h3{
+    font-family: 'Ledlight';
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: 2rem;
+    color:#ffffff;
+
+}
+
+.card p{
+    color:var(--accent);
+    font: size 2rem;
+    font-weight:bold;
+    margin-bottom: 20px; ;
+}
+
+.card button{
+    background-color:var(--accent);
+    color:var(--dark);
+    border:none;
+    padding:10px 20px;
+    border-radius: 8px;
+    cursor:pointer;
+    font-weight: bold;
+    overflow:hidden;
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:12px;
+    margin-bottom:20px;
+    transition:0.4s;
+}
